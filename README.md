@@ -1,27 +1,44 @@
-# PortfolioAndrea
+# PortfolioAndrea 🧑‍💻
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+O projeto foi desenvolvido utilizando o Framework Angular. 
+The project was developed using Angular Framework.
 
-## Development server
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ <img src ="./src/assets/img/pagina-en-construccion.jpg"/> 
 
-## Code scaffolding
+<div style="display: inline">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<a href = "mailto:tecnicosindependencia@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 
-## Build
+<a href="https://www.linkedin.com/in/andrea-montoya-ruiz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+</div>
 
-## Running unit tests
+<h2>💡 Descripción</h2>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p>
+Bienvenido a mi Portafolio de trabajo como desarrolladora de Software<a href="https://amontoya1.github.io/Portfolio-Andrea/" target="_blank">portafolio inicial a mi recorrido por el mundo del desenvolvimiento</a>. Este nuevo repositório incluye una series de mejorias como la implementación del framework Angular, el cual es parte de mi experiencia como desarrolladora FullStack.
+</p>
 
-## Running end-to-end tests
+<h2>🎁 Créditos</h2>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
+<table>
 
-## Further help
+<tr>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<td align="center">
+
+
+<sub>
+
+<b>Andrea Montoya Ruiz</b>
+
+</sub>
+
+
+</td>
+
+</tr>
+
+</table>
