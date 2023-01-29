@@ -1,0 +1,300 @@
+@import "includes";
+body {
+  background-color: $color-modal-backdrop;
+  height: 100vh;
+}
+
+.first-section {
+  background-color: $color-modal-backdrop;
+  padding-top: 80px;
+  display: flex;
+  margin-top: 20px;
+}
+.first-section h1 {
+  color: #fff;
+  font-weight: $font-bolder;
+  font-size: 2.5em;
+}
+.first-section p {
+  font-size: 20px;
+  font-weight: $font-regular;
+  color: #fff;
+  margin-top: 15px;
+}
+.introdution {
+  padding: 20px 10px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 60vw;
+}
+.gifs {
+  margin-left: 100px;
+  max-width: 50vw;
+  display: flex;
+  position: absolute;
+}
+.gif2 {
+  position: static;
+  margin-left: -190px;
+  margin-top: 100px;
+  max-width: 200px;
+  width: 100%;
+}
+.gif1 {
+  max-width: 300px;
+  width: 100%;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.gif3 {
+  position: absolute;
+  margin-left: -280px;
+  margin-top: 140px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me {
+  background-color: $color-background;
+  color: white;
+  align-content: center;
+  position: relative;
+}
+
+#img-me {
+  > img {
+    width: 240px;
+  }
+  margin-left: 40%;
+  margin-top: -10%;
+  position: absolute;
+}
+
+.about-me-inside {
+  padding: 100px 100px 40px 100px;
+  text-align: center;
+  position: relative;
+}
+
+.about-me-inside p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#project-title h1 {
+  text-align: center;
+}
+#project-title {
+  padding-top: 100px;
+  margin-top: -110px;
+  background-color: $color-background;
+  color: white;
+  align-content: center;
+  height: 700px;
+}
+.projects-call {
+  margin-top: -240px;
+  background-color: $color-modal-backdrop;
+}
+#projects {
+  margin-top: -250px;
+}
+
+.button-1 {
+  margin-right: 10px;
+  background-color: $color-background !important;
+}
+.button-2 {
+  color: $color-background !important;
+}
+
+.repository {
+  margin-top: -30px;
+  margin-bottom: -50px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  /* background-color: #4600a2; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/img/tecnologia-digitando.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+}
+.repository h3 {
+  color: white;
+  font-size: 17px;
+}
+.inside-repository {
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.inside-repository a {
+  margin-top: 15px;
+  width: fit-content;
+}
+
+/* main section */
+.main-section {
+  height: 350px;
+  background-color: $color-modal-backdrop;
+  // margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  padding: 20px;
+}
+.side-left {
+  height: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+.side-right {
+  max-width: 750px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+}
+.side-right h4 {
+  color: $color-background;
+  font-size: 4.5rem;
+  font-weight: $font-bolder;
+}
+.h2-left {
+  font-size: 3rem;
+  color: #ffff;
+  margin-left: 30%;
+}
+.h3-left {
+  font-size: 1.5rem;
+  color: #ffff;
+  font-weight: $font-regular;
+}
+.items-right {
+  margin-right: 30px;
+}
+
+@include desktop  {
+  .first-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gifs {
+    justify-content: center;
+  }
+  .gifs {
+    margin-left: 50px;
+    max-width: 40vw;
+    display: flex;
+  }
+  .gif2 {
+    position: static;
+    margin-left: -110px;
+    margin-top: 0px;
+    max-width: 100px;
+    width: 100%;
+  }
+  .gif1 {
+    max-width: 150px;
+    width: 100%;
+    margin-left: 00px;
+  }
+
+  .gif3 {
+    position: absolute;
+    margin-left: -280px;
+    margin-top: 140px;
+    max-width: 100px;
+    width: 100%;
+  }
+  .introdution {
+    max-width: none;
+    margin-right: 0;
+    padding: 10px;
+  }
+  .about-me-inside {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  #project-title {
+    height: 1700px;
+  }
+}
+
+@include smartphone{
+  .first-section h1 {
+    font-size: 1.5rem;
+  }
+  .first-section p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .about-me-inside {
+    padding: 100px 20px;
+    text-align: center;
+  }
+}
+
+@include desktop  {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-left {
+    max-width: 750px;
+    margin-right: 1px;
+    width: 100%;
+  }
+}
+@include smartphone {
+  .side-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-section {
+    margin-top: 0;
+    height: 680px;
+    padding-bottom: 0;
+  }
+  #img-me {
+    margin-top: -8%;
+    margin-bottom: 5%;
+    > img {
+      width: 200px;
+    }
+  }
+}
+@include sm {
+  .div-mid {
+    margin-top: 150px;
+  }
+  #img-me {
+    margin-top: -60px;
+    > img {
+      width: 200px;
+      margin-right: -10%;
+      margin-top: -5%;
+    }
+  }
+}

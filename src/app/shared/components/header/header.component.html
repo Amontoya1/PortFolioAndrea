@@ -1,0 +1,70 @@
+<mat-sidenav-container class="header-container" data-bs-theme="dark">
+  <ng-container *ngTemplateOutlet="sidenavTemplate"></ng-container>
+  <div class="container d-flex justify-content-between align-items-center">
+    <img src="../../../../assets/img/logoAndrea2.svg"  class="logo" alt="Logotipo Andrea Montoya">
+    
+    <div class="header-navigation d-none d-lg-flex align-items-end">
+      <p class="header-navigation-item">
+        <a mat-list class="header-link"   (click)="scrollTo('start')"  title="Instalações">
+          <mat-icon>person</mat-icon>
+          Inicio
+        </a>
+      </p>
+      <p class="header-navigation-item">
+        <a mat-list class="header-link" (click)="scrollTo('project-title')" title="Reparação">
+          <mat-icon class="fa">devices</mat-icon>
+          Proyectos
+        </a>
+      </p>
+      <p class="header-navigation-item">
+        <a mat-list class="header-link"  (click)="scrollTo('skills')" title="Reparação">
+          <mat-icon class="fa">laptop</mat-icon>
+          Habilidades
+        </a>
+      </p>
+        <p class="header-navigation-item">
+        <a mat-list class="header-link"  title="Contato">
+          <mat-icon class="fa" matSuffix>mail_outline</mat-icon>Contacto</a>
+      </p>
+    </div>
+
+    <mat-icon *ngIf="isMobile" class="borgir-menu-icon" (click)="sidenav.toggle()" >menu</mat-icon>
+  </div>
+</mat-sidenav-container>
+
+ <!-- SideNav -->
+ <ng-template #sidenavTemplate>
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="isMobile ? 'dialog' : 'navigation'"
+    [mode]="isMobile ? 'over' : 'side'"  [opened]="isMobile">
+    <mat-icon *ngIf="isMobile"  class="sidenav-close-icon" (click)="drawer.toggle()" >close</mat-icon>
+    <div class="sidenav-header">
+      <span class="section-title">Menu</span>
+    </div>
+    <div class="sidenav-body">
+      <p class="sidenav-navigation-item">
+        <a class="sidenav-link" (click)="drawer.toggle()"  (click)="scrollTo('start')"    title="Instalações">
+          <mat-icon class="fa">person</mat-icon>
+          Inicio
+        </a>
+      </p>
+      <p class="sidenav-navigation-item">
+        <a class="sidenav-link"   (click)="scrollTo('project-title')" (click)="drawer.toggle()" 
+      title="Reparação">
+      <mat-icon class="fa">devices</mat-icon>
+          Proyectos
+        </a>
+      </p>
+      <p class="sidenav-navigation-item">
+        <a class="sidenav-link" (click)="scrollTo('skills')"  (click)="drawer.toggle()" 
+      title="Reparação">
+      <mat-icon class="fa">laptop</mat-icon>
+          Habilidades
+        </a>
+      </p>
+      <p class="sidenav-navigation-item">
+        <a class="sidenav-link" (click)="drawer.toggle()"
+      title="Contato"><mat-icon  class="fa" matSuffix>mail_outline</mat-icon>Contacto</a>
+      </p>
+    </div>
+  </mat-sidenav>
+</ng-template>

@@ -1,0 +1,74 @@
+@import "includes";
+
+body {
+    background-color: $color-modal-backdrop;
+}
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 50px 15px 50px;
+}
+.relative {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color:#060606;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 1px 3px 10px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 10px;
+    height: 450px;
+}
+
+.relative p {
+    color: rgb(147, 147, 147);
+}
+.box-habilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    color: #141c3a;
+    padding: 30px 20px;
+    
+}
+
+.box-habilities p, h2, li {
+    color: white;
+}
+
+.box-habilities h4 {
+    color: $color-alert-confirm;
+    font-weight: $font-bolder;
+    font-size: 1.1em;
+}
+.box-habilities h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.box-habilities li {
+    line-height: 1.5;
+    margin-right: 35px;
+}
+.icons-aboutme{
+    width: 70px;
+}
+
+@include desktop {
+    .conteiner{
+       flex-direction: column;
+       align-items: center;
+   }
+   .relative {
+       width: 100%;
+   }
+}
+@include sm {
+    .relative {
+        height: 500px;
+    }
+}

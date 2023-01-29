@@ -1,0 +1,375 @@
+/* Screen dimensions */
+@mixin smartphone {
+  @media screen and (max-width: $bp-md)  {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (max-width: $bp-lg) {
+      @content;
+    }
+  }
+  
+  @mixin xs {
+    @media only screen and (max-width: $bp-sm - 1) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media only screen and (min-width: $bp-sm) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media only screen and (min-width: $bp-md) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media only screen and (min-width: $bp-lg) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media only screen and (min-width: $bp-xl) {
+      @content;
+    }
+  }
+  
+  @mixin xxl {
+    @media only screen and (min-width: $bp-xxl) {
+      @content;
+    }
+  }
+  
+  /* Grid System */
+  @mixin grid($columns-smartphone: $grid-columns-smartphone, $columns-desktop: $grid-columns-desktop) {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0;
+    position: relative;
+  
+    @include smartphone() {
+      -ms-grid-columns: unquote(repeater("1fr ", $columns-smartphone));
+      grid-template-columns: repeat($columns-smartphone, 1fr);
+      width: 100%;
+    }
+  
+    @include desktop() {
+      -ms-grid-columns: unquote(repeater("1fr ", $columns-desktop));
+      grid-template-columns: repeat($columns-desktop, 1fr);
+      width: 100%;
+    }
+  }
+  
+  @mixin grid-column-span($cols) {
+    grid-column-end: span $cols;
+    -ms-grid-column-span: $cols;
+  }
+  
+  @mixin grid-row-span($rows) {
+    grid-row-end: span $rows;
+    -ms-grid-rows-span: $rows;
+  }
+  
+  @mixin grid-column-start($cols) {
+    -ms-grid-column: $cols;
+    grid-column-start: $cols;
+  }
+  
+  @mixin grid-row-start($rows) {
+    -ms-grid-row: $rows;
+    grid-row-start: $rows;
+  }
+  
+  @mixin grid-column-max-size($columns-smartphone: $grid-columns-smartphone, $columns-desktop: $grid-columns-desktop) {
+    @include smartphone {
+      @include grid-column-start(1);
+      @include grid-column-span($columns-smartphone);
+    }
+  
+    @include desktop {
+      @include grid-column-start(1);
+      @include grid-column-span($columns-desktop);
+    }
+  }
+  
+  @function grid-custom-column($cols, $grid-columns: $grid-columns-smartphone) {
+    @return calc(100vw / #{$grid-columns} * #{$cols});
+  }
+  
+  @mixin container() {
+    @include smartphone {
+      @include grid-column-start(1);
+      @include grid-column-span(15);
+  
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  
+    @include desktop {
+      @include grid-column-start(6);
+      @include grid-column-span(20);
+    }
+  }
+  
+  @mixin transition($css-attribute: $attribute, $animation-duration: $duration, $type-animation: $animation) {
+    -webkit-transition: $css-attribute $animation-duration $type-animation;
+    -moz-transition: $css-attribute $animation-duration $type-animation;
+    -o-transition: $css-attribute $animation-duration $type-animation;
+    transition: $css-attribute $animation-duration $type-animation;
+  }
+  
+  @mixin font-text-normal {
+    @include font-antialiased;
+  
+    font-style: normal;
+    font-weight: $font-light;
+    line-height: 140%;
+    letter-spacing: 0.04rem;
+  
+    @include smartphone {
+      font-size: 13px;
+    }
+  
+    @include desktop {
+      font-size: 14px;
+    }
+  }
+  
+  @mixin font-text-normal-2 {
+    @include font-antialiased;
+  
+    font-style: normal;
+    font-weight: $font-light;
+    line-height: 140%;
+    letter-spacing: 0.04rem;
+  
+    @include smartphone {
+      font-size: 14px;
+    }
+  
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  
+  @mixin font-title-h1 {
+    @include font-antialiased;
+  
+    font-style: normal;
+    font-weight: $font-regular;
+    line-height: 100%;
+    letter-spacing: 0.03rem;
+  
+    font-size: 31px;
+  
+    @include sm {
+      font-size: 44px;
+    }
+  
+    @include md {
+      font-size: 54px;
+    }
+  
+    @include lg {
+      font-size: 68px;
+    }
+  
+    @include xxl {
+      font-size: 72px;
+    }
+  }
+  
+  @mixin font-title-h2 {
+    @include font-antialiased;
+  
+    font-style: normal;
+    font-weight: $font-regular;
+    line-height: 100%;
+    letter-spacing: 0.03rem;
+  
+    font-size: 18px;
+  
+    @include sm {
+      font-size: 18px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include lg {
+      font-size: 24px;
+    }
+  
+    @include xxl {
+      font-size: 36px;
+    }
+  }
+  
+  @mixin font-title-h3 {
+    @include font-antialiased;
+  
+    font-style: normal;
+    font-weight: $font-regular;
+    line-height: 100%;
+    font-family: 'Roboto';
+    letter-spacing: 0.03rem;
+  
+    font-size: 16px;
+  
+    @include sm {
+      font-size: 18px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include lg {
+      font-size: 24px;
+    }
+  
+    @include xxl {
+      font-size: 28px;
+    }
+  }
+  
+  @mixin font-title-h4 {
+    @include font-antialiased;
+  
+    font-style: normal;
+    font-weight: $font-regular;
+    line-height: 100%;
+    letter-spacing: 0.03rem;
+  
+    font-size: 16px;
+  
+    @include sm {
+      font-size: 18px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include lg {
+      font-size: 20px;
+    }
+  }
+  
+  @mixin font-text-error {
+    @include font-antialiased;
+    @include font-text-normal-light;
+  
+    color: $color-alert-error;
+    fill: $color-alert-error;
+  }
+  
+  @mixin font-text-normal-light {
+    @include font-text-normal;
+  
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  
+  @mixin font-text-normal-light-2 {
+    @include font-text-normal-2;
+  
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  
+  @mixin font-text-normal-medium {
+    @include font-text-normal;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-text-normal-medium-2 {
+    @include font-text-normal-2;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-text-normal-bold {
+    @include font-text-normal;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-text-normal-bk {
+    @include font-text-normal;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-title-h1-bold {
+    @include font-title-h1;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-title-h2-bk {
+    @include font-title-h2;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-title-h2-bold {
+    @include font-title-h2;
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-title-h3-medium {
+    @include font-title-h3;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-title-h3-bold {
+    @include font-title-h3;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-title-h4-bold {
+    @include font-title-h4;
+  
+    font-family: 'Roboto';
+  }
+  
+  @mixin font-antialiased {
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+  
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+  @mixin no-user-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  @mixin rotate($rotation-degree: $degree) {
+    -o-transform: rotate($rotation-degree);
+    -ms-transform: rotate($rotation-degree);
+    -moz-transform: rotate($rotation-degree);
+    -webkit-transform: rotate($rotation-degree);
+    transform: rotate($rotation-degree);
+  }

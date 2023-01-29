@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+  font-family: "Roboto";
+}
+
+
+
+html {
+  overflow: hidden !important;
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}

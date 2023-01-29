@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="131px" height="131px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8.6 8.6"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#5BE9B9}
+    .fil1 {fill:black;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_3068232289536">
+   <rect class="fil0" width="8.6" height="8.6" rx="1.2" ry="1.2"/>
+   <g>
+    <path class="fil1" d="M4.3 8.25l-3.34 -1.98 0 -3.94 3.34 -1.98 3.34 1.98 0 3.94 -3.34 1.98zm-2.96 -2.2l2.96 1.75 2.96 -1.75 0 -3.5 -2.96 -1.75 -2.96 1.75 0 3.5z"/>
+    <circle class="fil1" cx="4.3" cy="0.67" r="0.67"/>
+    <circle class="fil1" cx="4.3" cy="7.93" r="0.67"/>
+    <circle class="fil1" cx="1.24" cy="6.02" r="0.67"/>
+    <circle class="fil1" cx="7.36" cy="6.02" r="0.67"/>
+    <circle class="fil1" cx="1.24" cy="2.58" r="0.67"/>
+    <circle class="fil1" cx="7.36" cy="2.58" r="0.67"/>
+    <path class="fil1" d="M7.78 6.31l-6.96 0 3.48 -6.12 3.48 6.12zm-6.3 -0.39l5.64 0 -2.82 -4.96 -2.82 4.96z"/>
+   </g>
+  </g>
+ </g>
+</svg>

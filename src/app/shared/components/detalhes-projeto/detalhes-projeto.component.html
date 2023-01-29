@@ -1,0 +1,64 @@
+<!-- <h1>testando modal</h1>
+<p *ngIf="variavel == 'projeto1'">{{variavel}} 1</p>
+<p *ngIf="variavel == 'projeto2'">{{variavel}} 2</p>
+<p *ngIf="variavel == 'projeto3'">{{variavel}} 3</p>
+ -->
+ <div class="title-button">
+    <h2 mat-dialog-title>Detalles de Proyectos</h2>
+    <button mat-icon-button mat-dialog-close>
+        <i class="material-icons">close</i>
+    </button>
+</div>
+<div class="todo" *ngIf="variavel == 'projeto1'">
+    <div class="card">
+        <img id="banner" src="./../../../assets/img/previdencia.png" alt="Proyecto previdencia">
+        <div class="labeldiv">
+        <p class="label">Em desenvolvimento</p>
+        </div>
+        <h2 class="content">Sustentación Sistema Seguros</h2>
+        <p class="content">Site Sistema Legado de Seguros.</p>
+        <div class="profile">
+            <img id="profileimg" src="./../../../assets/img/brasil.jpg" alt="Owner">
+            <div>
+                <h3>Empresa de Seguros de Previdencia Privada Brasil</h3>
+                <p class="followers">Año 2021 hasta Actualmente</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="todo" *ngIf="variavel == 'projeto2'">
+    <div class="card">
+        <img id="banner" src="./../../../assets/img/finance.jpg" alt="Proyectos Variados">
+        <div class="labeldiv">
+        <p class="label">Em desenvolvimento</p>
+         </div>
+        <h2 class="content">Software de Vendas Seguro</h2>
+        <p class="content">Site para apresentar a empresa e vender contrato de empréstimo online através de landing pages de cada produto.</p>
+        <div class="profile">
+            <img id="profileimg" src="./../../../assets/img/brasil.jpg" alt="Owner">
+            <div>
+                <h3>Empresa brasileira</h3>
+                <p class="followers">Año 2020 - Año 2021</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="todo" *ngIf="variavel == 'projeto3'">
+    <div class="card">
+        <section >
+            <img id="banner" class="is-blur" src="./../../../assets/img/juegosDigitales.jpg" alt="Proyectos Futuros">
+            <div class="labeldiv">
+            <p class="label">Em breve (Aguarde)</p>
+            </div>
+            <h2 class="content is-blur">Software Juegos Educativos</h2>
+            <p class="content is-blur">Software intuitivo e dinâmico para usuários estudiantiles que potencie su proceso de enseñanza aprendizaje</p>
+            <div class="profile is-blur">
+            <img id="profileimg" class="is-blur" src="./../../../assets/img/brasil.jpg" alt="Owner">
+            <div class="is-blur">
+                <h3>Empresa x</h3>
+                <p class="followers">Master en Tecnología Educativa</p>
+            </div>
+        </div>
+        </section>
+    </div>
+</div>

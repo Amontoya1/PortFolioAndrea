@@ -1,0 +1,78 @@
+@import "includes";
+footer {
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  padding-bottom: 30px;
+}
+#footer-informations {
+  margin-top: 80px;
+
+  .logo {
+    margin-bottom: 30px;
+  }
+}
+
+footer p {
+  color: rgb(237, 237, 237);
+  font-weight: $font-medium;
+  text-align: center;
+}
+footer h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.icon-footer {
+  width: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.icon-footer:hover {
+  transform: scale(1.2);
+}
+.is-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.start-box {
+  height: 150px;
+  width: 80%;
+  margin-top: 40px;
+  background-color: #060606;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;
+  color: #141c3a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.25rem;
+}
+.btn-secondary {
+  font-size: 17px;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: $font-medium;
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 2px $color-background;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  transition: ease-in-out 0.4s;
+  background-color: $color-background;
+  color: white;
+}
+
+@include smartphone {
+  .start-box {
+    flex-direction: column;
+    height: 350px;
+  }
+}
