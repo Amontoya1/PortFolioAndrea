@@ -11,7 +11,7 @@
 }
 
 .header-container {
-  border-top: solid 15px $color-background;
+  border-top: solid 10px $color-background;
   background-color: $color-modal-backdrop;
   box-shadow: 0 -0.8rem 0.5rem 1rem $color-background;
 }
@@ -23,7 +23,7 @@
     color: $color-background-login;
     text-align: center;
     margin: 0 35px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: $font-bold;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
     background-color: $color-modal-backdrop;
@@ -72,7 +72,7 @@
 
 .logo {
   cursor: pointer;
-  width: 220px;
+  max-width: 200px;
 }
 
 /* SIDENAV */

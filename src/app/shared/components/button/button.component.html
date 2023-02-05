@@ -1,0 +1,13 @@
+<button
+  [type]="type"
+  [disabled]="disabled || loading"
+>
+  <ng-container *ngIf="loading">
+    <!-- <amr-loading></amr-loading> -->
+  </ng-container>
+  <ng-container *ngIf="!loading">
+    <ng-content></ng-content>
+  </ng-container>
+</button>
+
+

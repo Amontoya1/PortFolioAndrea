@@ -1,0 +1,77 @@
+@import "includes";
+
+.button {
+  @include font-text-normal-light-2;
+
+  width: 100%;
+  border-radius: 3px;
+  border-style: solid;
+  line-height: 100% !important;
+}
+
+.theme-primary,
+.theme-secondary {
+  @include transition(all, $duration-medium, $ease-in-out);
+}
+
+.theme-primary {
+  border-color: $color-primary;
+  color: $color-background;
+  background-color: $color-primary;
+
+  &:hover:not(:disabled) {
+    border-color: $color-secondary;
+    background-color: $color-secondary;
+  }
+
+  &:active:not(:disabled) {
+    border-color: $color-button-deactivated;
+    background-color: $color-button-deactivated;
+  }
+
+  &:disabled {
+    border-color: $color-button-deactivated;
+    background-color: $color-button-deactivated;
+  }
+}
+
+.theme-secondary {
+  border-color: $color-primary;
+  color: $color-primary;
+  background-color: transparent;
+
+  &:hover:not(:disabled) {
+    border-color: $color-secondary;
+    color: $color-secondary;
+  }
+
+  &:active:not(:disabled) {
+    border-color: $color-button-deactivated;
+    color: $color-button-deactivated;
+  }
+
+  &:disabled {
+    border-color: $color-button-deactivated;
+    color: $color-button-deactivated;
+  }
+}
+
+.border-width-normal {
+  border-width: 1px;
+}
+
+.border-width-bold {
+  border-width: 2px;
+}
+
+.height-small {
+  height: 30px;
+}
+
+.height-normal {
+  height: 40px;
+}
+
+.height-large {
+  height: 49px;
+}

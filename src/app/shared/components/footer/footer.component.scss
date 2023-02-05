@@ -5,11 +5,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 550px;
-  padding-bottom: 30px;
 }
 #footer-informations {
-  margin-top: 80px;
+  margin-top: 10px;
 
   .logo {
     margin-bottom: 30px;
@@ -40,9 +38,8 @@ footer h1 {
   flex-direction: row;
 }
 .start-box {
-  height: 150px;
+  height: 100px;
   width: 80%;
-  margin-top: 40px;
   background-color: #060606;
   border-radius: 6px;
   box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 0 0 1px #141c3a;

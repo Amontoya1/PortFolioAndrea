@@ -1,0 +1,6 @@
+<carousel class="carousel" [cellWidth]="carouselCellWidth" [height]="carouselHeight" [cellsToShow]="carouselCellsToShow"
+  [cellsToScroll]="carouselCellsToScroll" [arrows]="carouselArrows" [dots]="carouselDots">
+  <div class="carousel-cell" *ngFor="let image of images" (click)="handleCarouselEvents(image)">
+    <img [src]="image.path" alt="Certificado de Curso">
+  </div>
+</carousel>

@@ -1,6 +1,7 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
@@ -16,6 +17,7 @@ export class HeaderComponent implements OnInit  {
 
   constructor(
     private breakpointObserver: BreakpointObserver,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -32,5 +34,21 @@ export class HeaderComponent implements OnInit  {
 
   scrollTo(element: any): void {
     (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
+  public onCallToActionManutencao() {
+    this.router.navigate(['./habilidades']);
+  }
+
+  public onCallToActionHome() {
+    this.router.navigate(['./home']);
+  }
+  
+  public onCallToActionProyectos() {
+    this.router.navigate(['./projects']);
+  }
+
+  public onCallToActionContact() {
+    this.router.navigate(['./contact']);
   }
 }

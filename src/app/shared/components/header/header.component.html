@@ -5,25 +5,25 @@
     
     <div class="header-navigation d-none d-lg-flex align-items-end">
       <p class="header-navigation-item">
-        <a mat-list class="header-link"   (click)="scrollTo('start')"  title="Instalações">
+        <a mat-list class="header-link"   (click)="onCallToActionHome()"   title="Instalações">
           <mat-icon>person</mat-icon>
           Inicio
         </a>
       </p>
       <p class="header-navigation-item">
-        <a mat-list class="header-link" (click)="scrollTo('project-title')" title="Reparação">
+        <a mat-list class="header-link"  (click)="onCallToActionProyectos()"  title="Reparação">
           <mat-icon class="fa">devices</mat-icon>
           Proyectos
         </a>
       </p>
       <p class="header-navigation-item">
-        <a mat-list class="header-link"  (click)="scrollTo('skills')" title="Reparação">
+        <a mat-list class="header-link"   (click)="onCallToActionManutencao()" title="Reparação">
           <mat-icon class="fa">laptop</mat-icon>
           Habilidades
         </a>
       </p>
         <p class="header-navigation-item">
-        <a mat-list class="header-link"  title="Contato">
+        <a mat-list class="header-link" (click)="onCallToActionContact()" title="Contato">
           <mat-icon class="fa" matSuffix>mail_outline</mat-icon>Contacto</a>
       </p>
     </div>
@@ -42,27 +42,27 @@
     </div>
     <div class="sidenav-body">
       <p class="sidenav-navigation-item">
-        <a class="sidenav-link" (click)="drawer.toggle()"  (click)="scrollTo('start')"    title="Instalações">
+        <a class="sidenav-link" (click)="drawer.toggle()"  (click)="onCallToActionHome()"    title="Instalações">
           <mat-icon class="fa">person</mat-icon>
           Inicio
         </a>
       </p>
       <p class="sidenav-navigation-item">
-        <a class="sidenav-link"   (click)="scrollTo('project-title')" (click)="drawer.toggle()" 
+        <a class="sidenav-link" (click)="onCallToActionProyectos()" (click)="drawer.toggle()" 
       title="Reparação">
       <mat-icon class="fa">devices</mat-icon>
           Proyectos
         </a>
       </p>
       <p class="sidenav-navigation-item">
-        <a class="sidenav-link" (click)="scrollTo('skills')"  (click)="drawer.toggle()" 
+        <a class="sidenav-link" (click)="onCallToActionManutencao()"  (click)="drawer.toggle()" 
       title="Reparação">
       <mat-icon class="fa">laptop</mat-icon>
           Habilidades
         </a>
       </p>
       <p class="sidenav-navigation-item">
-        <a class="sidenav-link" (click)="drawer.toggle()"
+        <a class="sidenav-link"  (click)="onCallToActionContact()" (click)="drawer.toggle()"
       title="Contato"><mat-icon  class="fa" matSuffix>mail_outline</mat-icon>Contacto</a>
       </p>
     </div>

@@ -6,7 +6,7 @@
   }
   
   @mixin desktop {
-    @media screen and (max-width: $bp-lg) {
+    @media screen and (max-width: $bp-xl) {
       @content;
     }
   }
@@ -43,6 +43,12 @@
   
   @mixin xxl {
     @media only screen and (min-width: $bp-xxl) {
+      @content;
+    }
+  }
+
+  @mixin mobile {
+    @media only screen and (min-width:$bp-smartphone-min) {
       @content;
     }
   }
