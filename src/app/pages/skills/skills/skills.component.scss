@@ -1,0 +1,21 @@
+@import "includes";
+
+.first-section {
+  background-color: $color-modal-backdrop;
+  padding-top: 80px;
+  margin-top: 8px;
+}
+.first-section h1 {
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  font-size: 2.5em;
+
+  justify-content: space-around;
+}
+
+.cert {
+  z-index: 3;
+  margin: 0 2%;
+  padding-bottom: 10px;
+}

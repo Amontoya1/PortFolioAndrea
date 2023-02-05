@@ -1,0 +1,57 @@
+
+<body>
+<section class="contaner">
+  <h2>
+    <a
+      href="https://goo.gl/maps/x8ix1swXPA2fspg98"
+      target="black"
+      rel="noopener"
+    >
+      <mat-icon>location_on</mat-icon> </a
+    >Ubicación: Rio de Janerio - Brasil
+  </h2>
+  <form
+    [formGroup]="form"
+    action="https://formsubmit.co/a.montoya1@hotmail.com"
+    method="POST"
+    (ngSubmit)="onSubmit()"
+  >
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        maxlength="45"
+        inputmode="text"
+        placeholder="Name"
+        formControlName="name"
+        #nameInput
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy">
+      <mat-label>Email:</mat-label>
+      <input
+        matInput
+        type="email"
+        formControlName="email"
+        placeholder="Email"
+      />
+      <mat-icon matSuffix>mail_outline</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+      <mat-label>Assunto:</mat-label>
+      <textarea
+        matInput
+        placeholder="Assunto"
+        formControlName="message"
+      ></textarea>
+    </mat-form-field>
+
+    <div mat-dialog-actions>
+      <button class="btn-secondary" [disabled]="!form.valid">Enviar</button>
+    </div>
+  </form>
+</section>
+</body>
+

@@ -1,0 +1,24 @@
+<div class="dialog-header">
+  <div class="d-flex justify-content-end">
+    <button mat-icon-button mat-dialog-close>
+      <i class="material-icons">close</i>
+  </button>
+  </div>
+</div>
+<div class="dialog-body">
+  <p class="dialog-body-title pl-0">Descripción del Curso</p>
+  <div class="destaque-logo d-flex justify-content-center">
+    <img [src]="data.cert.path" alt="Certificado Seleccionado" />
+  </div>
+  <br />
+  <p class="cert-contents" [innerHTML]="data.cert.subtitle"></p>
+</div>
+<div class="dialog-footer">
+  <div class="row modal-button-container d-flex justify-content-center">
+    <div class="col-12 col-lg-7 px-2">
+      <amr-button class="w-100" mat-dialog-close>
+        Voltar
+      </amr-button>
+    </div>
+  </div>
+</div>

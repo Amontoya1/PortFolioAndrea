@@ -1,0 +1,21 @@
+@import "includes";
+
+.destaque-logo {
+  img {
+    width: 23rem;
+  }
+}
+
+.cert-contents {
+  @include font-text-normal-light;
+
+  text-align: justify;
+  color: blue;
+}
+
+::ng-deep.cdk-overlay-backdrop.cdk-overlay-dark-backdrop {
+  &.cdk-overlay-backdrop-showing {
+    opacity: 80%;
+    background-color: $color-modal-backdrop;
+  }
+}

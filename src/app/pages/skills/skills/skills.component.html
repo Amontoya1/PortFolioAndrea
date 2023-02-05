@@ -1,0 +1,13 @@
+<section class="first-section">
+  <amr-habilities-cards></amr-habilities-cards>
+  <h1>Certificados</h1>
+  <div class="cert">
+    <amr-carousel
+      [cellsToShow]="5"
+      [cellsToScroll]="3"
+      [images]="imageObjects"
+      [height]="140"
+      (eventsCarousel)="handleCarouselEvents($event)"
+    ></amr-carousel>
+  </div>
+</section>

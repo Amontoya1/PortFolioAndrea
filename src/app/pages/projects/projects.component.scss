@@ -1,0 +1,201 @@
+@import "includes";
+body {
+  background-color: $color-modal-backdrop;
+  height: 100vh;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
+#img-me {
+  > img {
+    width: 240px;
+  }
+  margin-left: 40%;
+  margin-top: -10%;
+  position: absolute;
+}
+
+.about-me-inside {
+  padding: 60px 50px 40px 60px;
+  text-align: center;
+  position: relative;
+}
+
+.about-me-inside p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#project-title h1 {
+  text-align: center;
+}
+#project-title {
+  background-color: $color-background;
+  color: white;
+  align-content: center;
+  height: 700px;
+}
+.projects-call {
+  margin-top: -240px;
+  background-color: $color-modal-backdrop;
+}
+#projects {
+  margin-top: -250px;
+}
+
+.button-1 {
+  margin-right: 10px;
+  background-color: $color-background !important;
+}
+.button-2 {
+  color: $color-background !important;
+}
+
+.repository {
+  margin-top: -30px;
+  margin-bottom: -50px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  /* background-color: #4600a2; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../../assets/img/tecnologia-digitando.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+}
+.repository h3 {
+  color: white;
+  font-size: 17px;
+}
+.inside-repository {
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.inside-repository a {
+  margin-top: 15px;
+  width: fit-content;
+}
+
+/* main section */
+.main-section {
+  height: 350px;
+  background-color: $color-modal-backdrop;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 110px;
+}
+.side-left {
+  height: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+.side-right {
+  max-width: 750px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+}
+.side-right h4 {
+  color: $color-background;
+  font-size: 4.5rem;
+  font-weight: $font-bolder;
+}
+.h2-left {
+  font-size: 3rem;
+  color: #ffff;
+  margin-left: 30%;
+}
+.h3-left {
+  font-size: 1.5rem;
+  color: #ffff;
+  font-weight: $font-regular;
+}
+.items-right {
+  margin-right: 30px;
+}
+
+@include desktop  {
+  .first-section {
+    align-items: center;
+  }
+  #project-title {
+    height: 1700px;
+  }
+}
+
+
+@include desktop  {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-left {
+    max-width: 750px;
+    margin-right: 1px;
+    width: 100%;
+  }
+}
+@include smartphone {
+  .side-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-section {
+    margin-top: 50px;
+    height: 680px;
+    padding-bottom: 0;
+  }
+
+  .h2-left {
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+
+  .h3-left {
+    font-size: 1.2rem;
+    color: #ffff;
+    font-weight: $font-regular;
+  }
+  #img-me {
+    margin-top: -8%;
+    margin-bottom: 5%;
+    > img {
+      width: 200px;
+    }
+  }
+}
+@include sm {
+  .div-mid {
+    margin-top: 150px;
+  }
+
+  .h2-left {
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+
+  #img-me {
+    margin-top: -60px;
+    > img {
+      width: 200px;
+      margin-right: -10%;
+      margin-top: -5%;
+    }
+  }
+}
